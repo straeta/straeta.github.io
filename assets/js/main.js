@@ -226,4 +226,24 @@
    */
   new PureCounter();
 
+//   function sendMail() {
+//     var link = "mailto:me@example.com"
+//              + "?cc=myCCaddress@example.com"
+//              + "&subject=" + encodeURIComponent("This is my subject")
+//              + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+//     ;
+    
+//     window.location.href = link;
+// }
+
 })()
+
+// function sendMail() {
+//   var link = "mailto:straetatech@gmail.com"
+//            + "?cc=shreymishh@gmail.com"
+//            + "&subject=" + encodeURIComponent("Test")
+//            + "&body=" + encodeURIComponent(document.getElementById('message').value)
+//   ;
+  
+//   window.location.href = link;
+// }

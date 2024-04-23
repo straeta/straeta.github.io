@@ -125,7 +125,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form id="contact-form" class="php-email-form" action="sendemail.php">
+            <!-- <form action="/api/sendmail/" method="post" id="contact-form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -138,7 +138,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required>abc</textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -146,7 +146,41 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button onclick="sendEmail('abc', 'straetatech@gmail.com', 'test', 'test data message')">Send Message</button>
+              </div>
+            </form> -->
+            <form action="https://app.keila.io/forms/nfrm_5b94a5VD" class="contact-form container bg-white rounded py-4 md:py-8 form-floating m-3 gap-4" method="post" style="background-color:#f9fafb!important;color:#111827!important">
+              <div class="text-center">
+                <h1 class="text-4xl my-4">
+                  Contact Us
+                </h1>
+                <div class="text-xl mb-3">
+                  Let&#39;s connect and discuss your data needs!
+                </div>
+              </div>
+              <div class="form-floating m-4">
+                <input id="floatingInput" class="form-control" name="contact[email]" placeholder="info@example.com" type="email"/>
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating m-4">
+                <input id="floatingName" class="form-control" name="contact[first_name]" placeholder="John Doe" type="text"/>
+                <label for="floatingName">Full Name</label>
+              </div>
+              <div class="form-floating m-4">
+                <input id="floatingSub" class="form-control" name="contact[data][Subject]" placeholder="Regarding..." type="text"/>
+                <label for="floatingSub">Subject</label>
+              </div>
+              <div class="form-floating m-4">
+                <textarea id="floatingTextarea" class="form-control" name="contact[data][Message]" placeholder="" type="text"></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <div class="form-floating m-4 captcha">
+                <div class="h-captcha" data-sitekey="a1c5fab7-71df-4ea4-af75-87a3d07c61de" data-theme="dark"></div>
+              </div>
+              <div class="btn-container mb-5">
+                <button class="button button--cta button--large submit-btn">
+                  <h5>Submit</h5>
+                </button>
               </div>
             </form>
           </div>
@@ -288,6 +322,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- SMTP  -->
+  <script async="async" defer="defer" src="https://hcaptcha.com/1/api.js"></script>
 
 </body>
 

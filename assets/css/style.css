@@ -681,6 +681,39 @@ section {
 }
 
 /*--------------------------------------------------------------
+# BOOK A MEETING
+--------------------------------------------------------------*/
+.book-a-meet {
+  /* border: 1px solid #000; */
+  margin: auto;
+  width: fit-content;
+}
+
+.book-a-meet .book-a-meet-btn {
+  border: none;
+  margin: auto;
+  padding: 1.3em;
+  border-radius: 50px;
+  height: min-content;
+  width: max-content;
+  background-color: #1e4356;
+  color: #fff;
+  /* box-shadow: 8px 6px 4px #162f3d; */
+  box-shadow: 2px 8px 4px rgb(215, 215, 215);
+}
+
+.book-a-meet .book-a-meet-btn:hover {
+  background-color: #152f3c;
+  box-shadow: 4px 16px 8px rgb(215, 215, 215);
+  transform: translateY(-1em);
+  transition: 0.3s ease-in-out;
+}
+
+.book-a-meet .book-a-meet-btn:hover:after {
+  background-color: white;
+}
+
+/*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
 .why-us .container {
@@ -1586,6 +1619,39 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #8dbad2;
+}
+
+.captcha .h-captcha {
+  /* border: 1px solid #000; */
+  width: fit-content;
+  margin: auto;
+  /* border-radius: 50px; */
+}
+
+.btn-container {
+  /* border: 1px solid #000; */
+  width: fit-content;
+  margin: auto;
+  /* padding: 1em; */
+}
+
+.submit-btn {
+  border: none !important;
+  margin: auto;
+  padding: 0.6em 5em !important;
+  width: max-content;
+  height: fit-content;
+  border-radius: 60px;
+  background-color: #123649;
+  color: #fff;
+  box-shadow: 2px 8px 4px rgb(215, 215, 215);
+}
+
+.submit-btn:hover {
+  background-color: #0b212c;
+  box-shadow: 4px 16px 8px rgb(215, 215, 215);
+  transition: 0.3s ease-in-out;
+  transform: translateY(-0.5em);
 }
 
 @keyframes animate-loading {
