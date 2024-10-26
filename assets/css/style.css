@@ -63,7 +63,8 @@ a:hover {
 }
 
 #header.header-scrolled {
-  background: rgba(30, 67, 86, 0.8);
+  /* background: rgba(30, 67, 86, 0.8); */
+  background: linear-gradient(to right, rgba(55,88,249,1), rgba(2,0,36, 1));
   /* background: rgba(15, 15, 96, 0.8); */
   height: 60px;
 }
@@ -90,9 +91,9 @@ a:hover {
   /* max-height: 40px; */
 }
 
-#main {
+/* #main {
   margin-top: 80px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -140,7 +141,9 @@ a:hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #a2cce3;
+  /* color: #a2cce3; */
+  color: rgb(255, 209, 4);
+  /* background-color: white; */
 }
 
 /**
@@ -265,8 +268,9 @@ a:hover {
   width: 130%;
   height: 95%;
   /* background: linear-gradient(to right, rgba(37, 37, 83, 0.8), rgba(37, 37, 83, 0.6)), url("../img/dash-bg.png") center top no-repeat; */
-  background: linear-gradient(to right, rgba(30, 67, 86, 0.9), rgba(30, 67, 86, 0.6)), url("../gifs/bg.gif") center top no-repeat;
+  /* background: linear-gradient(to right, rgba(55, 88, 249, 0.9), rgba(30, 67, 86, 0.6)), url("../gifs/bg.gif") center top no-repeat; */
   /* background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/dash-bg.png") center top no-repeat; */
+  background: linear-gradient(to right, rgba(55,88,249,1), rgba(2,0,36, 0.5)), url("../gifs/bg.gif") center top no-repeat;
   background-size: cover;
   z-index: 0;
   border-radius: 0 0 50% 50%;
@@ -716,25 +720,27 @@ section {
 --------------------------------------------------------------*/
 .book-a-meet {
   /* border: 1px solid #000; */
-  margin: auto;
+  /* margin: auto; */
+  justify-self: center;
   width: fit-content;
 }
 
 .book-a-meet .book-a-meet-btn {
   border: none;
-  margin: auto;
   padding: 1.3em;
-  border-radius: 50px;
+  padding-bottom: 0.7em;
+  border-radius: 10px;
   height: min-content;
-  width: max-content;
-  background-color: #1e4356;
+  width: 13em;
+  /* background-color: #1e4356; */
+  background: rgb(0, 110, 255);
   color: #fff;
   /* box-shadow: 8px 6px 4px #162f3d; */
   box-shadow: 2px 8px 4px rgb(215, 215, 215);
 }
 
 .book-a-meet .book-a-meet-btn:hover {
-  background-color: #152f3c;
+  background-color: rgb(50, 100, 255);
   box-shadow: 4px 16px 8px rgb(215, 215, 215);
   transform: translateY(-1em);
   transition: 0.3s ease-in-out;
